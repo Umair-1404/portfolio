@@ -335,7 +335,7 @@ footer .footer-rights {
     text-align: center;
   }
   .leftSection {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin-bottom: 20px;
   }
   .rightSection img {
@@ -368,6 +368,11 @@ footer .footer-rights {
   .secondSection h3 {
     font-size: 1.3em;
   }
+
+  .project-buttons {
+    height: 3.5rem;
+  }
+
   .fifthSection {
     padding: 40px 15px;
   }
