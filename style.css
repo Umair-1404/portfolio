@@ -295,6 +295,14 @@ footer {
 .footer a:hover {
   text-decoration: underline;
 }
+
+.footer-third{
+  font-size: 1.2rem;
+}
+.icons{
+  font-weight: 900;
+}
+
 footer hr {
   border: 0;
   background: #9c97f1;
@@ -307,6 +315,14 @@ footer .footer-rights {
   padding: 10px 0;
 }
 @media (max-width: 768px) {
+  
+  nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
   nav .nav-list {
     display: none;
     flex-direction: column;
@@ -400,4 +416,9 @@ footer .footer-rights {
     margin: 10px auto;
     display: block;
   }
+
+  .footer-rights {
+    font-size: 0.8rem;
+  }
+
 }
