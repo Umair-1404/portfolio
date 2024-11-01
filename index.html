@@ -19,7 +19,12 @@
       <nav>
         <div class="left">Umair's Portfolio</div>
         <div class="right">
-          <ul>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav-list">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -29,6 +34,7 @@
         </div>
       </nav>
     </header>
+    
     <main>
       <section id="home" class="firstSection">
         <div class="leftSection">
@@ -190,7 +196,7 @@
       </div>
       <hr />
       <div class="footer-rights">
-        Copyright &copy; umairsportfolio.com | All rights reserved
+        Copyright &copy; umairsdevportfolio.netlify.app | All rights reserved
       </div>
     </footer>
 
@@ -202,6 +208,13 @@
         backSpeed: 20,
         backDelay: 1000,
         loop: true,
+      });
+
+      const mobileMenu = document.getElementById("mobile-menu");
+      const navList = document.querySelector(".nav-list");
+
+      mobileMenu.addEventListener("click", () => {
+          navList.classList.toggle("active");
       });
     </script>
   </body>
