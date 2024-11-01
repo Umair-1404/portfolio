@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umair - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">Umair's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Mohd Umair</span>
+          <div>I am a Passionate</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" alt="Background Image" />
+        </div>
+      </section>
+      <hr />
+      <section id="about" class="secondSection">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>Hi! I'm Umair, a passionate Front End Developer with a love for creating dynamic and responsive web applications. I enjoy turning ideas into reality and constantly strive to improve my skills and learn new technologies.</p>
+            <p>With experience in HTML, CSS, and JavaScript, I take pride in building user-friendly interfaces that provide a seamless experience.</p>
+            <h3>My Journey</h3>
+            <p>From starting with simple HTML pages to building complex applications using frameworks like React, my journey has been both challenging and rewarding. I’m always excited to tackle new projects and collaborate with others.</p>
+        </div>
+        <div class="about-image">
+            <img src="pfp.jpg" alt="Umair's Photo">
+        </div>
+    </section>
+<hr>    
+      <section id="skills" class="thirdSection">
+        <span class="text-gray">My Skill Set</span>
+        <h1>Languages & Technologies</h1>
+        <div class="skill-container">
+          <div class="skill">
+            <span>HTML</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 90%">90%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>CSS</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 85%">85%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>JavaScript</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 80%">80%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>ReactJS</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 75%">75%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>C++</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 70%">70%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Python</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 60%">60%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+      <section id="projects" class="fourthSection">
+        <span class="text-gray">What I've Built</span>
+        <h1>Projects</h1>
+      </div>
+      <div class="project">
+        <img src="cake-shop.png" alt="Project 1" class="project-image" />
+        <h2>Project 1: Cake Shop</h2>
+        <p>Cake Shop using HTML and CSS</p>
+        <div class="project-buttons">
+          <a href="https://cake-shop-umair.netlify.app/" class="btn">View Live</a>
+          <a href="https://github.com/Umair-1404/cake-shop" class="btn"
+            >GitHub Repo</a
+          >
+        </div>
+      </div>
+        <div class="project">
+          <img src="netflix.png" alt="Project 2" class="project-image" />
+          <h2>Project 2: Netflix Clone</h2>
+          <p>
+            A responsive clone website of Netflix built using HTML, CSS, and BOOTSTRAP
+          </p>
+          <div class="project-buttons">
+            <a href="https://webflix-umair.netlify.app" class="btn" target="_blank" >View Live</a>
+            <a href="https://github.com/Umair-1404/netflix-clone" class="btn" target="_blank"
+              >GitHub Repo</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <img src="restauco.png" alt="Project 3" class="project-image" />
+          <h2>Project 3: Restauco</h2>
+          <p>A Restaurant website using HTML, CSS and BOOTSTRAP</p>
+          <div class="project-buttons">
+            <a href="https://restaucoo.netlify.app/" class="btn">View Live</a>
+            <a href="https://github.com/Umair-1404/restauco" class="btn"
+              >GitHub Repo</a
+            >
+          </div>
+        </div>
+      </section>
+      <hr>
+    <section id="contact" class="fifthSection">
+      <div class="contact-header">
+          <h1>Get in Touch!</h1>
+      </div>
+      <div class="contact-form">
+          <p>If you have any questions or would like to get in touch, feel free to reach out!</p>
+          <form action="#" method="post">
+              <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <button type="submit">Send Message</button>
+          </form>
+      </div>
+  </section>
+<hr>  
+</main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Umair's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="/#skills">Skills</a></li>
+            <li><a href="/#projects">Projects</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <h3>Connect with Me</h3>
+          <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-rights">
+        Copyright &copy; umairsportfolio.com | All rights reserved
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Front End Developer,", "Coding Enthusiast."],
+        typeSpeed: 40,
+        backSpeed: 20,
+        backDelay: 1000,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
