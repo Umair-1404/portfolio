@@ -20,10 +20,12 @@ nav {
 }
 nav .left {
   font-size: 30px;
+  margin-left: 140px;
 }
 nav .nav-list {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
+  margin-right: 80px;
 }
 nav .nav-list li {
   list-style: none;
@@ -322,8 +324,11 @@ footer .footer-rights {
     top: 0;
     left: 0;
 }
-
+  nav .left{
+    margin-left: 0 !important;
+  }
   nav .nav-list {
+    margin-right: 0 !important;
     display: none;
     flex-direction: column;
     width: 100%;
@@ -351,7 +356,7 @@ footer .footer-rights {
     text-align: center;
   }
   .leftSection {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     margin-bottom: 20px;
   }
   .rightSection img {
@@ -383,6 +388,10 @@ footer .footer-rights {
   }
   .secondSection h3 {
     font-size: 1.3em;
+  }
+
+  .skill{
+    width: 70%;
   }
 
   .project-buttons {
@@ -423,7 +432,7 @@ footer .footer-rights {
 }
 
   .footer-rights {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
 }
