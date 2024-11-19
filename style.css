@@ -24,7 +24,7 @@ nav .left {
 }
 nav .nav-list {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   margin-right: 80px;
 }
 nav .nav-list li {
@@ -56,6 +56,7 @@ main hr {
   height: 1.2px;
   margin: 60px 84px;
 }
+
 .firstSection {
   display: flex;
   justify-content: space-around;
@@ -128,7 +129,7 @@ main hr {
   width: 100%;
 }
 .skill {
-  width: 45%;
+  width: 43%;
   margin: 10px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
@@ -185,6 +186,7 @@ main hr {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  margin: 20px 0;
 }
 .project h2 {
   font-size: 1.5rem;
@@ -246,7 +248,8 @@ label {
   margin-bottom: 5px;
   font-weight: bold;
 }
-input, textarea {
+input,
+textarea {
   background-color: rgba(63, 63, 117, 0.217);
   color: white;
   width: 100%;
@@ -298,10 +301,10 @@ footer {
   text-decoration: underline;
 }
 
-.footer-third{
+.footer-third {
   font-size: 1.2rem;
 }
-.icons{
+.icons {
   font-weight: 900;
 }
 
@@ -316,16 +319,118 @@ footer .footer-rights {
   color: gray;
   padding: 10px 0;
 }
+
+.dark-btn {
+  width: 50px;
+  height: 25px;
+  background-color: rgb(18, 18, 62);
+  font-size: 15px;
+  padding: 0 0px;
+}
+
+body.light {
+  background-color: white;
+  color: black;
+}
+
+body.light nav {
+  background-color: #f0f0fc;
+}
+
+body.light .secondSection,
+body.light .fifthSection {
+  background-color: #f0f0fc;
+  color: #333;
+}
+
+body.light footer {
+  background-color: white;
+  color: #000;
+}
+
+body.light .thirdSection .skill {
+  background-color: #f0f0fa;
+}
+body.light .thirdSection .skill .progress {
+  background-color: #fff;
+}
+body.light .thirdSection h1 {
+  color: #000;
+}
+
+body.light .fourthSection .project {
+  background-color: #f0f0fc;
+}
+body.light .fourthSection .project p {
+  color: gray;
+}
+
+body.light .nav-list li a {
+  color: #333;
+}
+
+body.light .nav-list li a:hover {
+  color: rgb(170, 107, 228);
+}
+
+body.light .menu-toggle .bar {
+  background-color: black;
+}
+
+.dark-btn {
+  width: 50px;
+  height: 25px;
+  background-color: rgb(18, 18, 62);
+  font-size: 15px;
+  padding: 0 0px;
+  border: none;
+  cursor: pointer;
+}
+
+body.light .dark-btn {
+  background-color: #f0f0fc;
+  color: black;
+}
+
+body.dark .dark-btn i {
+  color: white;
+}
+
+body.light .dark-btn i {
+  color: black;
+}
+
+body.light .dark-btn i:hover {
+  font-size: 20px;
+}
+
+body.dark .dark-btn:hover {
+  color: #9c97f1;
+  font-size: 18px;
+  background-color: rgb(18, 18, 62);
+}
+
+body.light nav .nav-list {
+  background-color: #f0f0fa;
+}
+
+body.light input,
+textarea {
+  color: #000;
+}
+
 @media (max-width: 768px) {
-  
   nav {
     position: absolute;
     width: 100%;
     top: 0;
     left: 0;
-}
-  nav .left{
-    margin-left: 0 !important;
+  }
+  nav .left {
+    margin-left: 18px !important;
+  }
+  nav .right {
+    margin-right: 20px !important;
   }
   nav .nav-list {
     margin-right: 0 !important;
@@ -337,6 +442,17 @@ footer .footer-rights {
     left: 0;
     background-color: rgb(18, 18, 62);
     z-index: 999;
+  }
+  nav .nav-list li {
+    margin: 5px 23px;
+  }
+  .dark-btn {
+    width: 50%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
   }
   nav .nav-list.active {
     display: flex;
@@ -390,12 +506,16 @@ footer .footer-rights {
     font-size: 1.3em;
   }
 
-  .skill{
+  .skill {
     width: 70%;
   }
 
   .project-buttons {
     height: 3.5rem;
+  }
+
+  .project h2 {
+    font-size: 1.3rem;
   }
 
   .fifthSection {
@@ -407,6 +527,7 @@ footer .footer-rights {
   .form-group {
     margin-bottom: 10px;
   }
+
   button {
     width: 50%;
     padding: 10px 20px;
@@ -415,7 +536,8 @@ footer .footer-rights {
     justify-content: center;
     align-items: center;
   }
-  input, textarea {
+  input,
+  textarea {
     width: 80%;
     padding: 10px;
     background-color: rgba(63, 63, 117, 0.217);
@@ -426,13 +548,11 @@ footer .footer-rights {
     display: block;
   }
 
-  
-.footer-third{
-  font-size: 1rem;
-}
+  .footer-third {
+    font-size: 1rem;
+  }
 
   .footer-rights {
     font-size: 0.7rem;
   }
-
 }
